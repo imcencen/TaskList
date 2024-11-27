@@ -1,11 +1,8 @@
-package paba.belajar.tasklist
+package paba.belajar.tasklistnew
 
-import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
-
-@Parcelize
 data class Task(
     var nama : String,
     var tanggal : String,
-    var desc : String
-): Parcelable
+    var desc : String,
+    var started : Boolean
+)

@@ -6,20 +6,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#212121">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Tasks"
+        android:textSize="20pt"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/white">
+    </TextView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTask"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_weight="1">
     </androidx.recyclerview.widget.RecyclerView>
 
     <Button
-        android:id="@+id/btnAdd"
+        android:id="@+id/btnTambah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Task">
+        android:text="Tambah Data"
+        android:layout_margin="16dp"
+        android:backgroundTint="#F44336">
     </Button>
 
 </LinearLayout>

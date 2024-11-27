@@ -2,49 +2,73 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="8dp"
+    android:padding="16dp"
+    android:background="#D7CCC8">
 
     <TextView
         android:id="@+id/tvNama"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="nama task">
+        android:text="Nama"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="10pt">
     </TextView>
+
     <TextView
         android:id="@+id/tvTanggal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="tanggal task">
+        android:text="Tanggal"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="8pt">
     </TextView>
+
     <TextView
-        android:id="@+id/tvDesc"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="deskripsi task">
+        android:text="Description"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="8pt">
     </TextView>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
         <Button
             android:id="@+id/btnDelete"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Delete"
-            android:layout_weight="1">
+            android:layout_marginHorizontal="4dp"
+            android:backgroundTint="#F44336">
         </Button>
         <Button
             android:id="@+id/btnEdit"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Edit"
-            android:layout_weight="1">
+            android:layout_marginHorizontal="4dp"
+            android:backgroundTint="#F44336">
         </Button>
         <Button
             android:id="@+id/btnStart"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Start"
-            android:layout_weight="1">
+            android:layout_marginHorizontal="4dp"
+            android:backgroundTint="#F44336">
         </Button>
+
     </LinearLayout>
+
 </LinearLayout>
